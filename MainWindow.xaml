@@ -1,0 +1,21 @@
+﻿<Window x:Class="TestingWPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TestingWPF"
+        mc:Ignorable="d"
+        Title="NovelCore_client" Height="480" Width="854" ResizeMode="NoResize">
+    <Grid>
+        <Canvas>
+            <Image x:Name ="Character" HorizontalAlignment="Left" Height="450" Margin="0" Canvas.Bottom="0" Canvas.Left="200" Width="500" Panel.ZIndex="1"
+               Source="C:\Users\Игорь\Desktop\done\NCE_content\Characters\Monika\Default.png" MouseLeftButtonDown="Character_MouseLeftButtonDown"/>
+            <Image x:Name="Background" HorizontalAlignment="Left" Height="480" Margin="0" Canvas.Bottom="0" Canvas.Left="0" Width="854" Panel.ZIndex="0"
+               Source="C:\Users\Игорь\Desktop\Monika\Club.png" MouseLeftButtonDown="Background_MouseLeftButtonDown"/>
+        </Canvas>
+        <Image x:Name="Textbox" HorizontalAlignment="Center" Height="300" Margin="0" Width="500" 
+               Source="C:\Users\Игорь\Desktop\Monika\doki-doki-literature-club-text-box-png-9-transparent.png" VerticalAlignment="Bottom"/>
+        <Label x:Name="Text" Content="Label" HorizontalAlignment="Left" Margin="190,378,0,0" VerticalAlignment="Top" Height="60" Width="478" FontSize="18" Foreground="White" FontFamily="Berlin Sans FB" MouseLeftButtonDown="Text_MouseLeftButtonDown"
+               Background="Transparent"/>
+    </Grid>
+</Window>
